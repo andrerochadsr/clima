@@ -9,9 +9,39 @@
 </head>
 <body>
     <header>
-        <h1>Clima</h1>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Clima</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Ajuda</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">COLORS</a></button>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
+
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Ajuda</a></li>
+            </ul>
+            <div class="login-button">
+                <button><a href="#">COLORS</a></button>
+            </div>
+        </div>
     </header>
     <main>
+
         <input type="button" value="Acionar" onclick="poke()">
         <h2 id="saida">
             Saída: 
