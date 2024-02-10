@@ -4,57 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="assets/scripts/scriptSearch.js"></script>
+    <script src="assets/scripts/scriptMenuShow.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1>Clima</h1>
-            </div>
-
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Inicio    </a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projetos  </a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Ajuda     </a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre     </a></li>
-                </ul>
-            </div>
-            <div class="login-button">
-                <button><a href="#">COLORS</a></button>
-            </div>
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
-
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Inicio    </a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projetos  </a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Ajuda     </a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre     </a></li>
-            </ul>
-            <div class="login-button">
-                <button><a href="#">COLORS</a></button>
-            </div>
-        </div>
-    </header>
+ 
     <main>
 
-        <input type="button" value="Acionar" onclick="poke()">
-        <h2 id="saida">
-            Saída: 
-        </h2>
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="cidade" spellcheck="false" class="input-cidade">
+                <button onclick="climaSearch()"><img src="assets/images/clima/search.png"></button>
+            </div>
+            <div class="clima">
+                <img src="assets/images/clima/rain.png" class="clima-icon">
+                <h1 class="temp">22</h1> 
+                <h2 class="city">Sao Paulo</h2>
+                <div class="detalhes">
+                    <div class="col">
+                        <img src="assets/images/clima/humidity.png">
+                        <div>
+                            <p class="humidade">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <img src="assets/images/clima/wind.png">
+                        <div>
+                            <p class="vento">6.45 m/s</p>
+                            <p>vento</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
 
     </main>
-    <footer>
-        <p>
-            projeto
-        </p>
 
-    </footer>
 </body>
 </html>

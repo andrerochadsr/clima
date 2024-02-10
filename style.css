@@ -1,18 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-}
-
-
-html {
-    background-color: blueviolet;
-}
-
 header {
-    background-color: blue;
+    background-color: #0091AD;
     box-shadow: 0px 3px 10px #464646;
 }
 
@@ -124,16 +111,4 @@ header {
     .open {
         display: block;
     }
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    background: #ffab62;
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
