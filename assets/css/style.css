@@ -49,6 +49,12 @@ html {
 .search button img {
     width: 16px;
 }
+
+.resposta {
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
 .clima-icon {
     width: 170px;
     margin-top: 30px;

@@ -6,9 +6,9 @@ async function climaSearch() {
     const response = await fetch(urlReq);
     const dados = await response.json();
     if (dados.message === 'city not found') {
-        document.querySelector('.input-cidade').value = 'ERRO! Nenhuma cidade encontrada'
+        document.querySelector('.resposta').innerHTML = 'ERRO! Cidade não encontrada.'
     } else {
-        console.log(dados)
+        document.querySelector('.resposta').innerHTML = '';
         const tempo = dados.weather[0].main
         if (tempo === 'Clear') {
             document.querySelector('.clima-icon').src = 'assets/images/clima/clear.png'
